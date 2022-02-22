@@ -5,11 +5,12 @@
     <strong>Selecione um livro:</strong>
     <ul>
       <li *ngFor="let livro of livros">
-        <p>{{ livro.id }}</p>
-        <p>{{ livro.nome }}</p>
+        <p><strong>Id:</strong> {{ livro.id }}</p>
+        <p><strong>Nome:</strong> {{ livro.nome }}</p>
         <p *ngIf="livro.descriptions">
-          {{ livro.descriptions }}
+          <strong>Descrição:</strong> {{ livro.descriptions }}
         </p>
+        <button type="button">Detalhes</button>
       </li>
     </ul>
   </div>
