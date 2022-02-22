@@ -7,6 +7,9 @@
       <li *ngFor="let livro of livros">
         <p>{{ livro.id }}</p>
         <p>{{ livro.nome }}</p>
+        <p *ngIf="livro.descriptions">
+          {{ livro.descriptions }}
+        </p>
       </li>
     </ul>
   </div>
