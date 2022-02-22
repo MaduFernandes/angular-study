@@ -1,7 +1,13 @@
 <div>
   <h2>Livros</h2>
 
-  <div *ngFor="let livro of livros">
-    <h3>{{ livro.nome }}</h3>
+  <div>
+    <strong>Selecione um livro:</strong>
+    <ul>
+      <li *ngFor="let livro of livros">
+        <p>{{ livro.id }}</p>
+        <p>{{ livro.nome }}</p>
+      </li>
+    </ul>
   </div>
 </div>
