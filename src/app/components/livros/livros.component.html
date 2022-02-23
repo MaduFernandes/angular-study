@@ -1,10 +1,10 @@
-<div>
-  <h2>Livros</h2>
+<div class="livros">
+  <h2 class="title">Livros</h2>
 
   <div>
-    <strong>Selecione um livro:</strong>
-    <ul>
-      <li *ngFor="let livro of livros">
+    <strong class="subtitle">Selecione um livro:</strong>
+    <ul class="card">
+      <li class="list-livros" *ngFor="let livro of livros">
         <p><strong>Id:</strong> {{ livro.id }}</p>
         <p><strong>Nome:</strong> {{ livro.nome }}</p>
         <p *ngIf="livro.descriptions">
