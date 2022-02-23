@@ -10,7 +10,9 @@
         <p *ngIf="livro.descriptions">
           <strong>Descrição:</strong> {{ livro.descriptions }}
         </p>
-        <button type="button">Detalhes</button>
+        <button type="button" routerLink="/details/{{ livro.id }}">
+          Detalhes
+        </button>
       </li>
     </ul>
   </div>
