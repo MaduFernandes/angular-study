@@ -3,7 +3,7 @@
     <li class="list" *ngFor="let livro of livros">
       <p class="title">{{ livro.nome }}</p>
       <p *ngIf="livro.descriptions" class="descriptions">
-        <strong>Descrição:</strong> {{ livro.descriptions }}
+         {{ livro.descriptions }}
       </p>
       <button type="button" routerLink="/details/{{ livro.id }}">
         Detalhes

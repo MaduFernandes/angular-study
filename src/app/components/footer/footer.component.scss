@@ -1,0 +1,26 @@
+div.footer {
+  overflow: hidden;
+  background-color: #dbc4ff;
+  padding: 20px 10px;
+
+  p.title-footer {
+    color: #ffff;
+    font-weight: bold;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  div.footer {
+    float: none;
+    display: block;
+    text-align: left;
+
+    p.title-footer {
+      font-size: 90%;
+    }
+  }
+}
