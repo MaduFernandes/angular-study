@@ -11,11 +11,16 @@ export class LivrosComponent implements OnInit {
   livros: Livros[] = [
     {
       id: 1,
-      nome: 'A menina que roubava livros.',
+      nome: '1986',
       descriptions:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     },
-    { id: 2, nome: 'Como se fosse a primeira vez.', descriptions: '' },
+    {
+      id: 2,
+      nome: 'Como se fosse a primeira vez.',
+      descriptions:
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    },
     {
       id: 3,
       nome: 'Quem é você Alasca?',
