@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { LivrosComponent } from './components/livros/livros.component';
-import { LivrosDetailsComponent } from './components/livros/livros-details/livros-details.component';
+import { LivrosComponent } from './livros/livros.component';
+import { LivrosDetailsComponent } from './livros/livros-details/livros-details.component';
 import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
