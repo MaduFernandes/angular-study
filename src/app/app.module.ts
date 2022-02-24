@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { BooksComponent } from './livros/livros.component';
-import { BooksDetailsComponent } from './livros/livros-details/livros-details.component';
+import { BooksComponent } from './books/books.component';
+import { BooksDetailsComponent } from './books/books-details/books-details.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';

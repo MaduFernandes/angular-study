@@ -7,7 +7,7 @@ import { Books } from './books';
   templateUrl: './books.component.html',
   styleUrls: ['./books.component.scss'],
 })
-export class LivrosComponent implements OnInit {
+export class BooksComponent implements OnInit {
   public nameButton = 'Detalhes';
   public typeButton = 'button';
 
