@@ -11,7 +11,7 @@ export class BooksComponent implements OnInit {
   public nameButton = 'Detalhes';
   public typeButton = 'button';
 
-  public book: Books[] = [
+  public books: Books[] = [
     {
       id: 1,
       name: '1986',
