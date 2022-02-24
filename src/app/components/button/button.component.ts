@@ -10,7 +10,6 @@ export class ButtonComponent implements OnInit {
 
   @Input() nome;
   @Input() router;
-  @Input() type;
 
   ngOnInit(): void {}
 }
