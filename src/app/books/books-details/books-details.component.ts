@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './books-details.component.html',
 })
 export class BooksDetailsComponent implements OnInit {
-  public name = 'Voltar';
+  public nameButton = 'Voltar';
   public typeButton = 'button';
 
   constructor() {}
