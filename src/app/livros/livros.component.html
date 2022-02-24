@@ -3,11 +3,13 @@
     <li class="list" *ngFor="let livro of livros">
       <p class="title">{{ livro.nome }}</p>
       <p *ngIf="livro.descriptions" class="descriptions">
-         {{ livro.descriptions }}
+        {{ livro.descriptions }}
       </p>
-      <button type="button" routerLink="/details/{{ livro.id }}">
-        Detalhes
-      </button>
+      <app-button
+        [nome]="nomeBotao"
+        [type]="typeBotao"
+        routerLink="/details/{{ livro.id }}"
+      ></app-button>
     </li>
   </ul>
 </div>

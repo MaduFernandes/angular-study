@@ -7,6 +7,7 @@ import { LivrosComponent } from './livros/livros.component';
 import { LivrosDetailsComponent } from './livros/livros-details/livros-details.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ButtonComponent } from './components/button/button.component';
 import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
@@ -17,6 +18,7 @@ import { AppRoutingModule } from './app.routing.module';
     LivrosDetailsComponent,
     HeaderComponent,
     FooterComponent,
+    ButtonComponent,
   ],
   bootstrap: [AppComponent],
 })

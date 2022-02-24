@@ -8,7 +8,10 @@ import { Livros } from './livros';
   styleUrls: ['./livros.component.scss'],
 })
 export class LivrosComponent implements OnInit {
-  livros: Livros[] = [
+  public nomeBotao = 'Detalhes';
+  public typeBotao = 'button';
+
+  public livros: Livros[] = [
     {
       id: 1,
       nome: '1986',
