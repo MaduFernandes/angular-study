@@ -1,32 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Livros } from './livros';
+import { Books } from './books';
 
 @Component({
-  selector: 'app-livros',
-  templateUrl: './livros.component.html',
-  styleUrls: ['./livros.component.scss'],
+  selector: 'app-books',
+  templateUrl: './books.component.html',
+  styleUrls: ['./books.component.scss'],
 })
 export class LivrosComponent implements OnInit {
-  public nomeBotao = 'Detalhes';
-  public typeBotao = 'button';
+  public nameButton = 'Detalhes';
+  public typeButton = 'button';
 
-  public livros: Livros[] = [
+  public book: Books[] = [
     {
       id: 1,
-      nome: '1986',
+      name: '1986',
       descriptions:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     },
     {
       id: 2,
-      nome: 'Como se fosse a primeira vez.',
+      name: 'Como se fosse a primeira vez.',
       descriptions:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     },
     {
       id: 3,
-      nome: 'Quem é você Alasca?',
+      name: 'Quem é você Alasca?',
       descriptions:
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     },

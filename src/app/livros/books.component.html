@@ -1,0 +1,15 @@
+<div class="books">
+  <ul class="card">
+    <li class="list" *ngFor="let book of books">
+      <p class="title">{{ book.name }}</p>
+      <p *ngIf="book.descriptions" class="descriptions">
+        {{ book.descriptions }}
+      </p>
+      <app-button
+        [name]="nameButton"
+        [type]="typeButton"
+        routerLink="/details/{{ book.id }}"
+      ></app-button>
+    </li>
+  </ul>
+</div>
