@@ -22,7 +22,7 @@ export class BooksComponent implements OnInit {
 
   getAllBooks() {
     return this.booksService
-      .getHeroes()
+      .getBooks()
       .subscribe((book) => (this.books = book));
   }
 }

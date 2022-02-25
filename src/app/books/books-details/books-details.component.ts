@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { BooksService } from '../../books.service';
 
 @Component({
   selector: 'app-books-details',
@@ -8,7 +10,12 @@ export class BooksDetailsComponent implements OnInit {
   public nameButton = 'Voltar';
   public typeButton = 'button';
 
-  constructor() {}
+  public idRoute;
+  constructor(
+    private route: ActivatedRoute,
+  ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.idRoute = this.route.snapshot.params.id;
+  }
 }
