@@ -8,7 +8,6 @@ import { BOOKS } from './mock-books';
   providedIn: 'root',
 })
 export class BooksService {
-  private booksUrl = 'api/book-details';
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' }),
   };
@@ -17,10 +16,5 @@ export class BooksService {
 
   getHeroes(): Observable<Books[]> {
     return of(BOOKS);
-  }
-
-  getHero(id: number): Observable<Books> {
-    const url = `${this.booksUrl}/${id}`;
-    return this.http.get<Books>(url);
   }
 }
