@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { BooksService } from '../../books.service';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
+import { switchMap } from 'rxjs/operators';
+import { BooksService } from '../books.service';
 
 @Component({
   selector: 'app-books-details',
@@ -13,9 +14,15 @@ export class BooksDetailsComponent implements OnInit {
   public idRoute;
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
+    private booksService: BooksService
   ) {}
 
   ngOnInit(): void {
-    this.idRoute = this.route.snapshot.params.id;
+    this.route.paramMap.pipe(
+      switchMap((params: ParamMap) =>
+        this.booksService.getBook(params.get('id')!)
+      )
+    );
   }
 }

@@ -1,4 +1,4 @@
-import { Books } from './books/books';
+import { Books } from './books';
 
 export const BOOKS: Books[] = [
   {

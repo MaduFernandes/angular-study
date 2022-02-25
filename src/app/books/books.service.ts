@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Books } from './books/books';
+import { Books } from './books';
 import { Observable, of } from 'rxjs';
 import { HttpHeaders } from '@angular/common/http';
 import { BOOKS } from './mock-books';
@@ -16,5 +16,10 @@ export class BooksService {
 
   getBooks(): Observable<Books[]> {
     return of(BOOKS);
+  }
+
+  getBook(id): Observable<Books[]> {
+    console.log(id);
+    return id;
   }
 }
