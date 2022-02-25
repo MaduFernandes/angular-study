@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BooksService } from '../books.service';
 
 import { Books } from './books';
 
@@ -11,28 +12,17 @@ export class BooksComponent implements OnInit {
   public nameButton = 'Detalhes';
   public typeButton = 'button';
 
-  public books: Books[] = [
-    {
-      id: 1,
-      name: '1986',
-      descriptions:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    },
-    {
-      id: 2,
-      name: 'Como se fosse a primeira vez.',
-      descriptions:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    },
-    {
-      id: 3,
-      name: 'Quem é você Alasca?',
-      descriptions:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
-    },
-  ];
+  public books: Books[];
 
-  constructor() {}
+  constructor(private booksService: BooksService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getAllBooks();
+  }
+
+  getAllBooks() {
+    return this.booksService
+      .getHeroes()
+      .subscribe((book) => (this.books = book));
+  }
 }
