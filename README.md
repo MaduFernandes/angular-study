@@ -1,3 +1,3 @@
-# angular-lsbauy
+# angular-study
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-lsbauy)
